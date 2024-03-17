@@ -15,6 +15,24 @@ public class FirstClass {
 	 *	3.Methods with out return type
 	 *	4.Methods with return type
 	 */
+
+	/*
+	 * Constructors - similar like method
+	 * Rules:
+	 * Method name should be same as your class name
+	 * It should not have any return type
+	 * it divides in 2 type
+	 * 1.Constructor with parameter/arguments
+	 * 2.Constructor with out parameter/arguments
+	 *
+	 */
+
+	public FirstClass(String name)
+	{
+		System.out.println("Constructor name is: " +name);
+
+	}
+
 	// Method with out parameter/arguments and with out return Type
 	public void printthis()
 	{
@@ -62,7 +80,7 @@ public class FirstClass {
 
 		System.out.println("My age is :"+23);
 		//System.out.println(2+3);
-		FirstClass FC = new FirstClass();
+		FirstClass FC = new FirstClass("FITA");
 		FC.printthis();
 		FC.Myoutput(5, 14);
 		FC.redeempoints(100,0.06);
