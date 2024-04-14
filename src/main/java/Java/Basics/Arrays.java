@@ -2,7 +2,7 @@ package Java.Basics;
 
 public class Arrays {
 
-	int a=10;
+	int a=10; //variable
 	int[] age = {25,35,45,65,75,99,67}; //static array
 	int[][] table = {{5,6},{8,9}};
 	//[5,6
@@ -14,6 +14,7 @@ public class Arrays {
 	//String[] course= {null,null,null,null,null}
 	public void getArray(String course1,String course2,String course3,String course4,String course5)
 	{
+		System.out.println(age);
 		System.out.println(a);
 		System.out.println(age[6]);
 		System.out.println(age.length);
@@ -32,7 +33,7 @@ public class Arrays {
 		course[2]=course3;
 		course[3]=course4;
 		course[4]=course5;
-		course[5]=course1;
+		//course[5]=course1;
 		for(String eachcourse : course)
 		{
 			System.out.println(eachcourse);
@@ -78,8 +79,8 @@ public class Arrays {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Arrays A = new Arrays();
-		//A.getArray("C#",".net","SQL","python","java");
-		A.twodimension();
+		A.getArray("C#",".net","SQL","python","java");
+		//A.twodimension();
 	}
 
 }
