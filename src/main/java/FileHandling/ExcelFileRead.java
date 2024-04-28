@@ -4,8 +4,12 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -14,7 +18,7 @@ public class ExcelFileRead {
 	
 	String filepath ="C:\\Users\\kumar\\git\\FITAPorurSeleniumWeekEnd\\Input\\MakeMyTrip.xlsx";
 	String outfilepath ="C:\\Users\\kumar\\git\\FITAPorurSeleniumWeekEnd\\Input\\output.xlsx";
-	
+	List<Object> ls = new ArrayList<>();
 	public void ExcelfileRead() throws IOException
 	{
 		File F = new File(filepath);
@@ -30,7 +34,8 @@ public class ExcelFileRead {
 			for(int j =0 ;j <totalColumns;j++)
 			{
 				Cell eachcell = row.getCell(j);
-				System.out.print(eachcell.getStringCellValue());
+				ls.add(ReadDataAsSuch(eachcell));
+				System.out.print(ReadDataAsSuch(eachcell));
 				System.out.print(" ");
 			}
 			System.out.println("");
@@ -60,6 +65,21 @@ public class ExcelFileRead {
 		}
 		wbk.write(Fs);
 		Fs.close();
+	}
+	
+	public Object ReadDataAsSuch(Cell cellValue)
+	{
+		if(cellValue.getCellType()==CellType.STRING)
+		{
+			return cellValue.getStringCellValue();
+		}
+		else if(cellValue.getCellType()==CellType.NUMERIC)
+		{
+			DataFormatter data =  new DataFormatter();
+			return data.formatCellValue(cellValue);
+			//return cellValue.getNumericCellValue();
+		}
+		return null;
 	}
 
 	public static void main(String[] args) throws IOException {

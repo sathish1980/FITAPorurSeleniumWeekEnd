@@ -80,7 +80,7 @@ public class TextfileReadAndWrite {
 		while((i=Bs.readLine())!=null)
 		{
 			FW.write(i);
-			FW.write("\n");
+			FW.write(i);
 		}	
 		FW.close();
 		System.out.println("Done");
