@@ -37,7 +37,11 @@ public class FirstCalss {
 		browser.findElement(By.name("email")).sendKeys("kumar");
 		//browser.findElement(By.className("inputtext _55r1 _6luy")).sendKeys("fita");
 		//browser.findElement(By.linkText("Forgotten password?")).click();
-		browser.findElement(By.partialLinkText("rgot")).click();
+		//browser.findElement(By.partialLinkText("rgot")).click();
+		browser.findElement(By.cssSelector("input#email")).sendKeys("fita");
+		browser.findElement(By.cssSelector("input[name='email']")).sendKeys("fita2");
+		browser.findElement(By.xpath("//input[@data-testid='royal_email']")).sendKeys("xpath");
+		browser.findElement(By.xpath("//*[@id='u_0_9_qy']")).sendKeys("data");
 	}
 	
 
