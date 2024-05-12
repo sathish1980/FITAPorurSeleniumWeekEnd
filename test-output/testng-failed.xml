@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.FITAPorurSeleniumWeekEnd.RadiobuttonandCheckbox">
+      <class name="test.FITAPorurSeleniumWeekEnd.Alerts">
         <methods>
-          <include name="dynamicRadiobuttonnanotherway"/>
+          <include name="MouseActionsDragAndDrop"/>
         </methods>
-      </class> <!-- test.FITAPorurSeleniumWeekEnd.RadiobuttonandCheckbox -->
+      </class> <!-- test.FITAPorurSeleniumWeekEnd.Alerts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

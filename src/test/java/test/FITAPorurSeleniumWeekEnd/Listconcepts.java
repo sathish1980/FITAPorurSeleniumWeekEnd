@@ -20,10 +20,10 @@ public class Listconcepts {
 	 *
 	 */
 
-	String expectedCountry ="Brazil";
+String expectedCountry ="Brazil";
 	
-	WebDriver browser;
-	@Test
+WebDriver browser;
+@Test
 public void SelectCountry()
 {
 	browser = new FirefoxDriver();
