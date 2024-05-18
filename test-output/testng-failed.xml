@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.FITAPorurSeleniumWeekEnd.Alerts">
+      <class name="test.FITAPorurSeleniumWeekEnd.WebTable">
         <methods>
-          <include name="MouseActionsDragAndDrop"/>
+          <include name="WebTableImplemenation"/>
         </methods>
-      </class> <!-- test.FITAPorurSeleniumWeekEnd.Alerts -->
+      </class> <!-- test.FITAPorurSeleniumWeekEnd.WebTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

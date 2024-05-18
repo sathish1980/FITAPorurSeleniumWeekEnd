@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-12T10:47:18 IST" name="Default suite" finished-at="2024-05-12T10:47:22 IST" duration-ms="3941">
+  <suite started-at="2024-05-18T14:30:14 IST" name="Default suite" finished-at="2024-05-18T14:30:35 IST" duration-ms="20196">
     <groups>
     </groups>
-    <test started-at="2024-05-12T10:47:18 IST" name="Default test" finished-at="2024-05-12T10:47:22 IST" duration-ms="3941">
-      <class name="test.FITAPorurSeleniumWeekEnd.Alerts">
-        <test-method signature="MouseActionsDragAndDrop()[pri:0, instance:test.FITAPorurSeleniumWeekEnd.Alerts@7f0eb4b4]" started-at="2024-05-12T10:47:18 IST" name="MouseActionsDragAndDrop" finished-at="2024-05-12T10:47:22 IST" duration-ms="3910" status="PASS">
+    <test started-at="2024-05-18T14:30:14 IST" name="Default test" finished-at="2024-05-18T14:30:35 IST" duration-ms="20196">
+      <class name="test.FITAPorurSeleniumWeekEnd.WebTable">
+        <test-method signature="WebTableImplemenation()[pri:0, instance:test.FITAPorurSeleniumWeekEnd.WebTable@5c33f1a9]" started-at="2024-05-18T14:30:14 IST" name="WebTableImplemenation" finished-at="2024-05-18T14:30:35 IST" duration-ms="20162" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MouseActionsDragAndDrop -->
-      </class> <!-- test.FITAPorurSeleniumWeekEnd.Alerts -->
+        </test-method> <!-- WebTableImplemenation -->
+      </class> <!-- test.FITAPorurSeleniumWeekEnd.WebTable -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
