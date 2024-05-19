@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.FITAPorurSeleniumWeekEnd.WebTable">
+      <class name="TestNgBasics.TEstNG1">
         <methods>
-          <include name="WebTableImplemenation"/>
+          <include name="Bf"/>
+          <include name="Beforeclass"/>
+          <include name="BeforeSuite"/>
+          <include name="af"/>
+          <include name="Testcase2"/>
+          <include name="Testcase3"/>
+          <include name="AfterTest"/>
+          <include name="aclass"/>
+          <include name="EndReport"/>
         </methods>
-      </class> <!-- test.FITAPorurSeleniumWeekEnd.WebTable -->
+      </class> <!-- TestNgBasics.TEstNG1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
