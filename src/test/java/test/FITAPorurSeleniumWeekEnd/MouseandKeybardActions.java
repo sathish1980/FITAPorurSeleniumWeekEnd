@@ -105,7 +105,7 @@ public class MouseandKeybardActions {
 		browser.manage().window().maximize();
 		browser.get("https://www.facebook.com/");
 		Actions mouseactions = new Actions(browser);
-		mouseactions.moveToElement(browser.findElement(By.id("email"))).sendKeys("sathish").keyDown(Keys.TAB).keyUp(Keys.TAB).perform();
+		//mouseactions.moveToElement(browser.findElement(By.id("email"))).sendKeys("sathish").keyDown(Keys.TAB).keyUp(Keys.TAB).perform();
 				
 	}
 	
@@ -116,8 +116,8 @@ public class MouseandKeybardActions {
 		browser.manage().window().maximize();
 		browser.get("https://www.facebook.com/");
 		Actions mouseactions = new Actions(browser);
-		mouseactions.moveToElement(browser.findElement(By.id("email"))).sendKeys("sathish kumar").keyDown(Keys.TAB).keyUp(Keys.TAB).keyDown(Keys.SHIFT).keyDown(Keys.TAB).keyUp(Keys.SHIFT).keyUp(Keys.TAB).perform();
-		mouseactions.moveToElement(browser.findElement(By.id("email"))).keyDown(Keys.BACK_SPACE).keyUp(Keys.BACK_SPACE).perform();		
+		//mouseactions.moveToElement(browser.findElement(By.id("email"))).sendKeys("sathish kumar").keyDown(Keys.TAB).keyUp(Keys.TAB).keyDown(Keys.SHIFT).keyDown(Keys.TAB).keyUp(Keys.SHIFT).keyUp(Keys.TAB).perform();
+		//mouseactions.moveToElement(browser.findElement(By.id("email"))).keyDown(Keys.BACK_SPACE).keyUp(Keys.BACK_SPACE).perform();		
 	}
 	
 	@Test
